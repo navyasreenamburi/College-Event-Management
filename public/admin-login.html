@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Administrator sign-in for Navya College Event Management.">
+    <title>Admin Login | Navya College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="admin-login">
+    <main class="auth-page">
+        <section class="panel auth-panel">
+            <a class="brand auth-brand" href="index.html">
+                <img src="images/navya-emblem.png" alt="Navya College Logo">
+                <span>Navya<small>Event Management</small></span>
+            </a>
+            <p class="eyebrow">ADMINISTRATOR ACCESS</p>
+            <h1>Sign in</h1>
+            <p class="muted">Sign in to create, edit, or remove college events.</p>
+
+            <p id="sessionStatus" class="message" role="status" aria-live="polite"></p>
+            <form id="adminLoginForm">
+                <label>
+                    Administrator password
+                    <input
+                        type="password"
+                        name="password"
+                        autocomplete="current-password"
+                        placeholder="Enter admin password"
+                        minlength="8"
+                        required
+                    >
+                    <small style="color:var(--muted);font-size:11.5px;margin-top:4px;display:block;">
+                        Default setup password: <code>admin12345678</code> (can be customized in <code>.env</code>)
+                    </small>
+                </label>
+                <p id="message" class="message" role="status" aria-live="polite"></p>
+                <div class="form-actions">
+                    <button type="submit" class="button primary">Sign in</button>
+                    <button id="logoutButton" type="button" class="button secondary" hidden>
+                        Sign out
+                    </button>
+                    <a class="button secondary" href="events.html">Back to Events</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

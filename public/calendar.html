@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Event calendar — Navya College Event Management System.">
+    <title>Event Calendar | Navya College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body data-page="calendar">
+
+    <div class="app-shell">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+                <a class="brand" href="index.html">
+                    <img src="images/navya-emblem.png" alt="Navya College Logo">
+                    <span>
+                        Navya
+                        <small>Event Management</small>
+                    </span>
+                </a>
+            </div>
+
+            <div class="sidebar-nav">
+                <p class="nav-section-label">Main Menu</p>
+                <nav class="navigation">
+                    <a class="nav-link" href="index.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        Dashboard
+                    </a>
+                    <a class="nav-link" href="events.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+                        All Events
+                    </a>
+                    <a class="nav-link" href="add-event.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                        Add Event
+                    </a>
+                    <a class="nav-link active" href="calendar.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Event Calendar
+                    </a>
+                    <a class="nav-link" href="reports.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        Reports &amp; Analysis
+                    </a>
+                </nav>
+
+                <p class="nav-section-label" style="margin-top:14px;">General</p>
+                <nav class="navigation">
+                    <a class="nav-link" href="about.html">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        About &amp; Contact
+                    </a>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <p class="sidebar-note">
+                    Plan better. Participate more.<br>Celebrate together.
+                </p>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow">DATES TO REMEMBER</p>
+                    <h1>Event Calendar</h1>
+                    <p class="muted">Stay updated with activities and upcoming college events.</p>
+                </div>
+                <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+                    <button type="button" class="button secondary" onclick="window.print()" style="display:inline-flex;align-items:center;gap:6px;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                        Print Calendar
+                    </button>
+                    <a class="button primary" href="add-event.html">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Add Event
+                    </a>
+                </div>
+            </header>
+
+            <!-- Campus Banner -->
+            <section class="calendar-banner">
+                <img src="images/college-entrance.jpeg" alt="College entrance" class="calendar-banner-image">
+                <div class="calendar-banner-text">
+                    <p class="eyebrow">WELCOME TO CAMPUS</p>
+                    <h2>Make Every Campus Moment Count</h2>
+                    <p>
+                        Discover events, plan ahead and be part of
+                        every college celebration.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Interactive Month Calendar Grid -->
+            <section class="panel calendar-grid-panel" id="calendarGridSection">
+                <div class="calendar-grid-header">
+                    <div class="calendar-month-nav">
+                        <button type="button" class="button small secondary" id="prevMonthBtn" aria-label="Previous month">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <h2 id="currentMonthYearTitle" style="margin:0;font-size:18px;">November 2026</h2>
+                        <button type="button" class="button small secondary" id="nextMonthBtn" aria-label="Next month">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                    </div>
+                    <div style="display:flex;gap:8px;align-items:center;">
+                        <button type="button" class="button small secondary" id="todayBtn">Today</button>
+                        <button type="button" class="button small primary" id="clearDateFilterBtn" style="display:none;padding:4px 10px;font-size:11px;">Show All Dates</button>
+                    </div>
+                </div>
+
+                <!-- 7-column Calendar Grid -->
+                <div class="cal-days-header">
+                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                </div>
+                <div id="calendarMonthDays" class="cal-month-grid">
+                    <p class="muted" style="grid-column:span 7;padding:20px;text-align:center;">Loading calendar days...</p>
+                </div>
+            </section>
+
+            <!-- Scheduled Events -->
+            <section class="panel">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">YOUR SCHEDULE</p>
+                        <h2 id="scheduleHeadingText">Scheduled Events</h2>
+                    </div>
+                    <a class="text-link" href="events.html">View All Events →</a>
+                </div>
+
+                <p class="muted">
+                    Events created through the Add Event page will appear below,
+                    ordered by their scheduled date.
+                </p>
+
+                <div id="calendarEvents" class="calendar-event-list">
+                    <p class="muted">Loading events...</p>
+                </div>
+
+                <div id="message" class="message" role="status" aria-live="polite"></div>
+
+            </section>
+
+            <!-- Help -->
+            <section class="panel">
+                <p class="eyebrow">PLAN AHEAD</p>
+                <h2>Never Miss an Event</h2>
+                <p class="muted">
+                    Check event dates, times, venues and statuses here.
+                    To schedule a new activity, select Add Event and enter its details.
+                </p>
+                <a class="button primary" href="add-event.html">Schedule an Event</a>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
