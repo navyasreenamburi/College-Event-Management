@@ -2,10 +2,10 @@
   "name": "navyacollegeeventmanagement",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "backend/app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "node --test"
+    "start": "node backend/app.js",
+    "test": "node --test backend/test"
   },
   "keywords": [],
   "author": "",
